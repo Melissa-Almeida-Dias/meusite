@@ -1,0 +1,99 @@
+/* Resetando margens e preenchimentos */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+/* CABEÇALHO */
+header {
+  width: 100%;
+  background-color: #ede9e2;
+  padding: 0 40px;
+  height: 65px;
+  display: flex;
+  justify-content: center;
+  justify-content: space-between;
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  z-index: 1000; /* Garante que o cabeçalho fique acima de tudo */
+}
+
+/* Container do cabeçalho */
+.header-container {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  max-width: 1200px;
+  width: 100%;
+  margin: o auto;
+}
+
+/* Logo */
+.logo {
+  width: 170px;
+  height: 170px;
+  overflow: hidden;
+  margin-right: 30px;
+}
+.logo img {
+  width: 100%;
+  height: 100%;
+  object-fit: contain;
+}
+
+/* Menu */
+nav {
+  flex: 1;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: inline-flex;
+  gap: 45px;
+  padding: 0;
+}
+
+nav ul li {
+  font-family: "Fredericka the Great", cursive;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #009220;
+  font-size: 12.5px;
+  font-weight: bold;
+  font-weight: 600;
+}
+
+nav ul li a:hover {
+  text-decoration: underline;
+}
+
+/* Adicionando espaçamento entre as letras */
+header h1,
+nav ul li a {
+  letter-spacing: 2.5px; /* Ajuste esse valor conforme necessário */
+}
+
+/* Ícones de Login e Sacola */
+.header-icons {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 50px; /* Espaçamento entre os ícones */
+}
+
+.header-icons img {
+  width: 75px; /* Tamanho dos ícones */
+  height: 75px;
+  cursor: pointer;
+  transition: 0.3s;
+}
+
+.header-icons img:hover {
+  transform: scale(1.1); /* Efeito ao passar o mouse */
+}
